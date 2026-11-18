@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassordStyrke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="heading">
+        <h1>
+            Test out how <span class="highlight"><span class="text">strong</span><span class="emoji"> 💪🏼</span></span> your password is!
+        </h1>
+        <h3>Tip: Avoid the use of dictionary words or common names, and avoid using any personal information</h3>
+
+        <div class="password-container">
+            <input type="text" id="password" placeholder="Skriv inn passord..." oninput="checkStrength()">
+            <div class="strength-bar"><div id="strength-fill"></div></div>
+            <p id="strength-text"></p>
+        </div>
+    </div>
+</body>
+</html>

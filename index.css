@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; /* myk overgang */
+}
+
+body.sterk-bakgrunn {
+    background-color: #bbffd7; /* lys grønn */
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.heading h1 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.highlight .text {
+    transition: opacity 0.2s;
+}
+
+.highlight .emoji {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.highlight:hover .text {
+    opacity: 0;
+}   
+
+.highlight:hover .emoji {
+    opacity: 1;
+}
+
+.heading h3 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(181, 181, 181);
+    margin-top: 0;
+}
+
+.password-container {
+  width: 300px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+#password {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.strength-bar {
+  height: 8px;
+  background-color: #dbdbdb;
+  margin-top: 15px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+#strength-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+
